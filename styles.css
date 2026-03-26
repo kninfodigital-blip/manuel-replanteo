@@ -649,16 +649,6 @@ p  { color: var(--color-gray-600); }
   margin-bottom: var(--space-xs);
   display: block;
 }
-.module-card__hours {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  background: var(--color-sand);
-  color: var(--color-brown);
-  padding: 0.3rem 0.8rem;
-  border-radius: 100px;
-  margin-bottom: var(--space-sm);
-}
 .module-card__title {
   font-size: 1.05rem;
   color: var(--color-brown);
@@ -693,10 +683,6 @@ p  { color: var(--color-gray-600); }
 .module-card--highlight .module-card__title { color: var(--color-sand); }
 .module-card--highlight .module-card__list li { color: rgba(255,255,255,0.75); }
 .module-card--highlight .module-card__list li::before { color: var(--color-olive); }
-.module-card--highlight .module-card__hours {
-  background: rgba(255,255,255,0.1);
-  color: var(--color-olive);
-}
 
 /* ============================================================
    SECCIÓN: TOLERANCIAS / DATOS TÉCNICOS
