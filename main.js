@@ -66,6 +66,38 @@ document.addEventListener('DOMContentLoaded', () => {
   animatedEls.forEach(el => observer.observe(el));
 
   // ============================================================
+  // CONTADORES ANIMADOS (números en hero)
+  // ============================================================
+  const counters = document.querySelectorAll('.stat-card__value[data-target]');
+
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.dataset.target, 10);
+        const duration = 2000; // ms
+        const start = performance.now();
+
+        const animate = (now) => {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const easeOut = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(target * easeOut);
+
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          }
+        };
+
+        requestAnimationFrame(animate);
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(c => counterObserver.observe(c));
+
+  // ============================================================
   // CARRUSEL DE GALERÍA
   // ============================================================
   const track       = document.getElementById('carouselTrack');
