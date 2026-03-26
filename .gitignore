@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V3
+.Trashes
+*.DS_Store
+
+# Office temp files
+~$*
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+
+# Claude
+.claude/

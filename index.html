@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Curso profesional de Replanteo de Cimentaciones con Zapatas Aisladas y Vigas Riostras. 70 horas, 7 ECTS. Impartido por Manuel y Rafael, arquitectos técnicos especializados en Passivhaus. LASAR MANAGEMENT." />
+  <meta name="robots" content="index, follow" />
+  <!-- OG -->
+  <meta property="og:title" content="Curso de Replanteo de Construcción — LASAR MANAGEMENT" />
+  <meta property="og:description" content="70 horas · 7 ECTS · Práctica real en obra. Aprende a replantar cimentaciones con zapatas aisladas y vigas riostras de la mano de arquitectos técnicos Passivhaus." />
+  <meta property="og:type" content="website" />
+  <title>Curso Replanteo de Construcción | LASAR MANAGEMENT</title>
+
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       NAVEGACIÓN
+       ===================================================== -->
+  <nav class="nav" id="nav" aria-label="Menú principal">
+    <div class="container">
+      <div class="nav__inner">
+        <!-- Logo -->
+        <a href="#inicio" class="nav__logo" aria-label="LASAR MANAGEMENT - Inicio">
+          <div class="nav__logo-icon">
+            <!-- Icono casa / árbol geométrico estilo marca -->
+            <svg viewBox="0 0 22 22" fill="none" stroke="#46391B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 2L2 9h2v10h14V9h2L11 2z"/>
+              <rect x="8" y="14" width="6" height="7" rx="1"/>
+            </svg>
+          </div>
+          <div>
+            <span class="nav__logo-text">LASAR</span>
+            <span class="nav__logo-sub">Arquitectura + Bioconstrucción</span>
+          </div>
+        </a>
+
+        <!-- Links desktop -->
+        <ul class="nav__links">
+          <li><a href="#programa">Programa</a></li>
+          <li><a href="#instructores">Instructores</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+
+        <!-- CTA nav -->
+        <a href="#registro" class="btn btn--primary nav__cta">Reservar plaza</a>
+
+        <!-- Hamburger mobile -->
+        <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menú mobile -->
+  <div class="nav__mobile" id="mobileMenu" role="dialog" aria-label="Menú móvil">
+    <button class="nav__mobile-close" id="mobileClose" aria-label="Cerrar menú">&times;</button>
+    <a href="#programa" class="mobile-link">Programa</a>
+    <a href="#instructores" class="mobile-link">Instructores</a>
+    <a href="#testimonios" class="mobile-link">Testimonios</a>
+    <a href="#faq" class="mobile-link">FAQ</a>
+    <a href="#registro" class="btn btn--primary btn--large">Reservar plaza</a>
+  </div>
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+  <section class="hero" id="inicio">
+    <!-- Imagen de fondo: foto promocional Manuel & Rafael -->
+    <div class="hero__bg">
+      <img
+        src="freepik_create-a-premium-promotional-cover-image-for-a-professional-construction-training-course.-main-concept-use-the-real-facial-features-body-proportions-and-overall-physical-presence-of-the-t_0001.png"
+        alt="Manuel y Rafael, instructores del Curso de Replanteo de Construcción"
+        fetchpriority="high"
+      />
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="container">
+      <div class="hero__inner">
+        <!-- Columna izquierda: copy principal -->
+        <div class="hero__content">
+          <div class="hero__badges">
+            <span class="hero__badge">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+              Módulo BOE 0565
+            </span>
+            <span class="hero__badge">7 ECTS</span>
+            <span class="hero__badge">Passivhaus</span>
+          </div>
+
+          <h1 class="hero__title">
+            Domina el<br/>
+            <em>Replanteo de Cimentaciones</em><br/>
+            con precisión real en obra
+          </h1>
+
+          <p class="hero__subtitle">
+            Aprende a materializar geometría constructiva sobre el terreno con tolerancias profesionales.
+            Zapatas aisladas, vigas riostras y documentación técnica completa.
+            Teoría + práctica real en obra en solo 2 días.
+          </p>
+
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <div class="hero__stat-num">70 h</div>
+              <div class="hero__stat-label">Duración total</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-num">7</div>
+              <div class="hero__stat-label">ECTS equivalencia</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-num">±1 cm</div>
+              <div class="hero__stat-label">Tolerancia exigida</div>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#registro" class="btn btn--primary btn--large">Reservar mi plaza</a>
+            <a href="#programa" class="btn btn--ghost">Ver programa completo</a>
+          </div>
+
+          <div class="hero__trust">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            Impartido por arquitectos técnicos certificados · Derechos de imagen garantizados
+          </div>
+        </div>
+
+        <!-- Columna derecha: card resumen + CTA -->
+        <div class="hero__card">
+          <div class="hero__card-tag">Próxima convocatoria 2026</div>
+          <div class="hero__card-title">Lo que incluye el curso</div>
+          <ul class="hero__card-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Manual técnico completo (~100 páginas)
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Día 1: Teoría, planos y cálculos de replanteo
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Día 2: Práctica real en obra de construcción
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              4 checklists profesionales de replanteo
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Glosario técnico y documentación final
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Certificado con equivalencia 7 ECTS
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Instrumentos topográficos reales (estación total, GPS, nivel)
+            </li>
+          </ul>
+
+          <!-- EDITABLE: precio convocatoria -->
+          <div class="hero__card-price">
+            <div class="hero__card-price-label">Inversión</div>
+            <div class="hero__card-price-amount"><!-- PRECIO --></div>
+            <div class="hero__card-price-note">Plazas limitadas · Pago fraccionado disponible</div>
+          </div>
+
+          <a href="#registro" class="btn btn--primary btn--large">Solicitar información</a>
+          <div class="hero__card-guarantee">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:4px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Formación oficial · Grupo reducido · Práctica en obra real
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       TRUST BAR
+       ===================================================== -->
+  <div class="trust-bar" role="complementary" aria-label="Datos de confianza">
+    <div class="container">
+      <div class="trust-bar__inner">
+        <div class="trust-bar__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <span class="trust-bar__label">Módulo oficial BOE 0565</span>
+        </div>
+        <div class="trust-bar__sep"></div>
+        <div class="trust-bar__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          <span class="trust-bar__label">7 ECTS equivalencia universitaria</span>
+        </div>
+        <div class="trust-bar__sep"></div>
+        <div class="trust-bar__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span class="trust-bar__label">Práctica en obra real</span>
+        </div>
+        <div class="trust-bar__sep"></div>
+        <div class="trust-bar__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span class="trust-bar__label">Especialistas Passivhaus</span>
+        </div>
+        <div class="trust-bar__sep"></div>
+        <div class="trust-bar__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          <span class="trust-bar__label">Grupos reducidos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       ¿QUÉ ES ESTE CURSO?
+       ===================================================== -->
+  <section class="section" id="sobre-el-curso">
+    <div class="container">
+      <div class="what__grid">
+        <!-- Imagen: foto de clase en estudio -->
+        <div class="what__image animate-on-scroll">
+          <!-- ASSET: foto de alumnos trabajando con planos en clase -->
+          <img
+            src="estudio/IMG_4457.JPG"
+            alt="Alumnos trabajando con planos de replanteo en clase"
+            loading="lazy"
+          />
+          <div class="what__image-badge">Grupo de la última edición</div>
+        </div>
+
+        <!-- Contenido -->
+        <div class="what__content animate-on-scroll">
+          <span class="label-tag">El curso</span>
+          <h2>Replanteo técnico aplicado a vivienda unifamiliar</h2>
+          <p class="what__lead">
+            El replanteo es la operación que traslada la geometría del proyecto al terreno real.
+            Un error de 6 cm puede provocar la modificación de armaduras, hormigonados imprevistos
+            y retrasos con responsabilidad del técnico director. Este curso te forma para ejecutarlo
+            con precisión, documentación y método.
+          </p>
+
+          <div class="what__points">
+            <div class="what__point">
+              <div class="what__point-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <div class="what__point-text">
+                <strong>Documentación técnica completa</strong>
+                <span>Interpretación de planos, control de cotas, gestión de versiones y elaboración de informes finales.</span>
+              </div>
+            </div>
+            <div class="what__point">
+              <div class="what__point-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/><path d="M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/></svg>
+              </div>
+              <div class="what__point-text">
+                <strong>Topografía aplicada</strong>
+                <span>Planimetría, altimetría, coordenadas, distancias, ángulos y cotas con instrumentos reales.</span>
+              </div>
+            </div>
+            <div class="what__point">
+              <div class="what__point-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div class="what__point-text">
+                <strong>Práctica real en obra</strong>
+                <span>El segundo día se trabaja sobre un solar real con zapatas aisladas y vigas riostras en ejecución.</span>
+              </div>
+            </div>
+            <div class="what__point">
+              <div class="what__point-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="what__point-text">
+                <strong>Rigor y certificación</strong>
+                <span>Currículo alineado con el módulo oficial 0565 del BOE. Equivalencia de 7 créditos ECTS.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FICHA TÉCNICA DEL CURSO
+       ===================================================== -->
+  <section class="course-details section--alt" id="ficha">
+    <div class="container">
+      <div class="section__header text-center animate-on-scroll">
+        <span class="label-tag">Ficha técnica</span>
+        <h2>Datos del curso</h2>
+      </div>
+      <div class="details__grid animate-on-scroll">
+        <div class="detail-item">
+          <div class="detail-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="detail-item__value">70 h</div>
+          <div class="detail-item__label">Duración total</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="detail-item__value">7 ECTS</div>
+          <div class="detail-item__label">Equivalencia universitaria</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="detail-item__value">2 días</div>
+          <div class="detail-item__label">Formato intensivo</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="detail-item__value">Obra real</div>
+          <div class="detail-item__label">Práctica en terreno</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <div class="detail-item__value">BOE 0565</div>
+          <div class="detail-item__label">Módulo oficial</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <div class="detail-item__value">Reducido</div>
+          <div class="detail-item__label">Grupos pequeños</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       PROGRAMA / MÓDULOS
+       ===================================================== -->
+  <section class="section" id="programa">
+    <div class="container">
+      <div class="section__header text-center animate-on-scroll">
+        <span class="label-tag">Contenido</span>
+        <h2>Programa completo del curso</h2>
+        <p style="margin-top:0.75rem; max-width:600px; margin-left:auto; margin-right:auto;">
+          5 bloques temáticos progresivos + práctica completa en obra real. Todo alineado con el currículo oficial del módulo 0565.
+        </p>
+      </div>
+
+      <div class="modules__grid animate-on-scroll">
+        <!-- Bloque I -->
+        <div class="module-card">
+          <div class="module-card__num">RA1 — BLOQUE I</div>
+          <span class="module-card__hours">20 horas</span>
+          <h3 class="module-card__title">Fundamentos y recopilación de información</h3>
+          <ul class="module-card__list">
+            <li>Introducción al replanteo de cimentaciones</li>
+            <li>Documentación técnica del proyecto</li>
+            <li>Estudio del terreno y entorno de obra</li>
+            <li>Topografía aplicada: coordenadas, cotas, ángulos</li>
+            <li>Planimetría y altimetría básica</li>
+            <li>Orientaciones, referencias y proyecciones cartográficas</li>
+          </ul>
+        </div>
+
+        <!-- Bloque II -->
+        <div class="module-card">
+          <div class="module-card__num">RA2 — BLOQUE II</div>
+          <span class="module-card__hours">20 horas</span>
+          <h3 class="module-card__title">Croquis y planos de replanteo</h3>
+          <ul class="module-card__list">
+            <li>Selección de método de replanteo según tipo de obra</li>
+            <li>Elaboración de croquis y planos a escala</li>
+            <li>Representación de puntos, estaciones y referencias</li>
+            <li>Nivelación y replanteo de puntos en cota</li>
+            <li>Replanteo planimétrico y altimétrico</li>
+            <li>Curvas circulares y de transición</li>
+          </ul>
+        </div>
+
+        <!-- Bloque III -->
+        <div class="module-card">
+          <div class="module-card__num">RA3 — BLOQUE III</div>
+          <span class="module-card__hours">10 horas</span>
+          <h3 class="module-card__title">Instrumentos y planificación del replanteo</h3>
+          <ul class="module-card__list">
+            <li>Niveles ópticos y electrónicos</li>
+            <li>Estación total: puesta en estación y verificación</li>
+            <li>GPS y posicionamiento por satélite</li>
+            <li>Mantenimiento y calibración de equipos</li>
+            <li>Planificación y secuenciación del replanteo</li>
+            <li>Software específico de replanteo</li>
+          </ul>
+        </div>
+
+        <!-- Bloque IV -->
+        <div class="module-card">
+          <div class="module-card__num">RA4 — BLOQUE IV</div>
+          <span class="module-card__hours">30 horas</span>
+          <h3 class="module-card__title">Cálculos técnicos de replanteo</h3>
+          <ul class="module-card__list">
+            <li>Geometría aplicada: segmentos, ángulos, polígonos</li>
+            <li>Cálculo de coordenadas, distancias y pendientes</li>
+            <li>Determinación de puntos desde planos</li>
+            <li>Compensación y control de errores</li>
+            <li>Aplicaciones informáticas de cálculo</li>
+            <li>Incorporación de resultados a planos y planificación</li>
+          </ul>
+        </div>
+
+        <!-- Bloque V -->
+        <div class="module-card">
+          <div class="module-card__num">RA5 — BLOQUE V</div>
+          <span class="module-card__hours">50 horas</span>
+          <h3 class="module-card__title">Replanteo de zapatas aisladas y vigas riostras</h3>
+          <ul class="module-card__list">
+            <li>Establecimiento del origen de obra y referencias</li>
+            <li>Replanteo de ejes estructurales (tolerancia ±0,5 cm)</li>
+            <li>Materialización de centros de zapata (tolerancia ±1 cm)</li>
+            <li>Replanteo altimétrico de fondo de excavación</li>
+            <li>Posicionamiento de vigas riostras</li>
+            <li>Verificación y control de posición de puntos principales</li>
+            <li>Documentación final y ficha de replanteo</li>
+          </ul>
+        </div>
+
+        <!-- Bloque VI — PRÁCTICA -->
+        <div class="module-card module-card--highlight">
+          <div class="module-card__num">DÍA 2 — BLOQUE VI</div>
+          <span class="module-card__hours">Práctica completa en obra</span>
+          <h3 class="module-card__title">Práctica en terreno real</h3>
+          <ul class="module-card__list">
+            <li>Reconocimiento del solar y referencias externas</li>
+            <li>Identificación de referencias fijas (mojones, esquinas)</li>
+            <li>Puesta en estación y verificación de instrumento</li>
+            <li>Replanteo planimétrico completo</li>
+            <li>Replanteo altimétrico y verificación de cotas</li>
+            <li>Anotación en croquis y documentación final firmada</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       TOLERANCIAS TÉCNICAS
+       ===================================================== -->
+  <section class="tolerances" id="tolerancias">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <span class="label-tag">Precisión exigida</span>
+        <h2>Tolerancias técnicas de replanteo</h2>
+        <p style="margin-top:0.75rem; max-width:600px;">
+          Las tolerancias de ejecución no son una opción: forman parte de la responsabilidad técnica del director de obra.
+          En este curso las practicas con instrumentos reales hasta interiorizarlas.
+        </p>
+      </div>
+
+      <div class="tolerances__table-wrap animate-on-scroll">
+        <table class="tolerances__table">
+          <thead>
+            <tr>
+              <th>Elemento constructivo</th>
+              <th>Tolerancia planimetría</th>
+              <th>Tolerancia altimetría</th>
+              <th>Nivel exigido</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Centro de zapata aislada</td>
+              <td>± 1 cm</td>
+              <td>± 1 cm</td>
+              <td><span class="badge-ok">Crítico</span></td>
+            </tr>
+            <tr>
+              <td>Ejes estructurales</td>
+              <td>± 0,5 cm</td>
+              <td>—</td>
+              <td><span class="badge-ok">Crítico</span></td>
+            </tr>
+            <tr>
+              <td>Fondo de excavación</td>
+              <td>—</td>
+              <td>± 1 cm</td>
+              <td><span class="badge-ok">Alto</span></td>
+            </tr>
+            <tr>
+              <td>Vigas riostras</td>
+              <td>± 1 cm</td>
+              <td>± 1 cm</td>
+              <td><span class="badge-ok">Crítico</span></td>
+            </tr>
+            <tr>
+              <td>Referencias y estaciones topográficas</td>
+              <td>± 0,5 cm</td>
+              <td>± 0,5 cm</td>
+              <td><span class="badge-ok">Muy alto</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tolerances__warning animate-on-scroll">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+          <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+        <p>
+          <strong>Caso real de estudio:</strong> En una vivienda unifamiliar, un error de 6 cm en la posición de una zapata
+          provocó la desalineación de una viga riostra, requiriendo modificación de armaduras y hormigonado imprevisto.
+          Resultado: sobrecoste, retraso y responsabilidad civil del técnico director.
+          <strong>Este curso te enseña a evitar exactamente esto.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       METODOLOGÍA / CHECKLISTS
+       ===================================================== -->
+  <section class="methodology" id="metodologia">
+    <div class="container">
+      <div class="section__header text-center animate-on-scroll">
+        <span class="label-tag">Metodología</span>
+        <h2>Checklists de replanteo profesional</h2>
+        <p style="margin-top:0.75rem; max-width:600px; margin-left:auto; margin-right:auto;">
+          El curso incluye 4 checklists validados que podrás usar en tus obras desde el primer día.
+          El mismo sistema que usan Manuel y Rafael en sus proyectos Passivhaus.
+        </p>
+      </div>
+
+      <div class="methodology__grid animate-on-scroll">
+        <!-- Checklist 1 -->
+        <div class="checklist">
+          <div class="checklist__title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            Checklist 1 — Antes de iniciar
+          </div>
+          <ul class="checklist__items">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Revisar documentación completa del proyecto
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Verificar calibración de instrumentos
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Identificar y confirmar referencias externas
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Preparar croquis y planos de campo
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Comprobar operatividad de la zona de trabajo
+            </li>
+          </ul>
+        </div>
+
+        <!-- Checklist 2 -->
+        <div class="checklist">
+          <div class="checklist__title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            Checklist 2 — Replanteo planimétrico
+          </div>
+          <ul class="checklist__items">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Establecer origen de obra y puesta en estación
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Verificar orientación respecto a referencias
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Materializar puntos principales
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Verificar posiciones con doble medición
+            </li>
+          </ul>
+        </div>
+
+        <!-- Checklist 3 -->
+        <div class="checklist">
+          <div class="checklist__title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            Checklist 3 — Replanteo altimétrico
+          </div>
+          <ul class="checklist__items">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Identificar benchmark (punto de cota conocida)
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Trasladar cotas de referencia a la obra
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Verificar profundidades de excavación
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Control de cotas de fondo de zapatas
+            </li>
+          </ul>
+        </div>
+
+        <!-- Checklist 4 -->
+        <div class="checklist">
+          <div class="checklist__title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            Checklist 4 — Control y documentación final
+          </div>
+          <ul class="checklist__items">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Doble verificación independiente de posiciones
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Anotación de desviaciones en croquis
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Redacción de informe de replanteo
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Firma del acta de replanteo
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       INSTRUCTORES
+       ===================================================== -->
+  <section class="section" id="instructores">
+    <div class="container">
+      <div class="section__header text-center animate-on-scroll">
+        <span class="label-tag">Los instructores</span>
+        <h2>Aprende de quienes lo hacen en obra</h2>
+        <p style="margin-top:0.75rem; max-width:600px; margin-left:auto; margin-right:auto;">
+          Manuel y Rafael son arquitectos técnicos en activo, especializados en construcción eficiente
+          y certificación Passivhaus. No son formadores de academia: son profesionales que replantean
+          en obra y luego enseñan exactamente lo que aplican.
+        </p>
+      </div>
+
+      <div class="instructors__grid">
+        <!-- Manuel -->
+        <div class="instructor-card animate-on-scroll">
+          <div class="instructor-card__photo">
+            <!-- ASSET: foto de Manuel — extraer de freepik (lado izquierdo) o reemplazar con foto individual -->
+            <img
+              src="estudio/IMG_4463.JPG"
+              alt="Manuel — Arquitecto Técnico y docente del curso de replanteo"
+              loading="lazy"
+            />
+          </div>
+          <div class="instructor-card__body">
+            <div class="instructor-card__name">Manuel</div>
+            <div class="instructor-card__role">Arquitecto Técnico · Passivhaus Designer</div>
+            <p class="instructor-card__bio">
+              Arquitecto técnico con amplia experiencia en dirección de ejecución de viviendas unifamiliares.
+              Especialista en construcción eficiente y estándares Passivhaus. Combina el rigor técnico
+              de la normativa con la practicidad de quien supervisa obras reales cada semana.
+            </p>
+            <div class="instructor-card__tags">
+              <span class="instructor-card__tag">Replanteo en obra</span>
+              <span class="instructor-card__tag">Passivhaus</span>
+              <span class="instructor-card__tag">Topografía aplicada</span>
+              <span class="instructor-card__tag">Dirección de ejecución</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rafael -->
+        <div class="instructor-card animate-on-scroll">
+          <div class="instructor-card__photo">
+            <!-- ASSET: foto de Rafael — extraer de freepik (lado derecho) o reemplazar con foto individual -->
+            <img
+              src="estudio/IMG_4464.JPG"
+              alt="Rafael — Arquitecto Técnico y docente del curso de replanteo"
+              loading="lazy"
+            />
+          </div>
+          <div class="instructor-card__body">
+            <div class="instructor-card__name">Rafael</div>
+            <div class="instructor-card__role">Arquitecto Técnico · Bioconstrucción</div>
+            <p class="instructor-card__bio">
+              Arquitecto técnico especializado en bioconstrucción y materiales naturales. Con más de una
+              década ejecutando replanteos de cimentaciones en viviendas sostenibles, aporta al curso
+              la visión de la precisión como garantía estructural y no solo como exigencia normativa.
+            </p>
+            <div class="instructor-card__tags">
+              <span class="instructor-card__tag">Cimentaciones</span>
+              <span class="instructor-card__tag">Bioconstrucción</span>
+              <span class="instructor-card__tag">Documentación técnica</span>
+              <span class="instructor-card__tag">Formación práctica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empresa -->
+      <div style="text-align:center; margin-top:var(--space-xl); padding: var(--space-lg); background: var(--color-off-white); border-radius: var(--radius-lg);" class="animate-on-scroll">
+        <div class="label-tag" style="margin-bottom:0.5rem;">La empresa</div>
+        <h3 style="font-size:1.3rem; color:var(--color-brown); margin-bottom:0.5rem;">LASAR MANAGEMENT S.L.</h3>
+        <p style="font-size:0.9rem; color:var(--color-gray-600); max-width:500px; margin:0 auto 1rem;">
+          Arquitectura + Bioconstrucción · L'Eliana, Valencia
+        </p>
+        <div style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap;">
+          <a href="tel:+34960065094" style="font-size:0.85rem; color:var(--color-sand);">📞 960 065 094</a>
+          <a href="mailto:info@lasarmanagement.es" style="font-size:0.85rem; color:var(--color-sand);">✉ info@lasarmanagement.es</a>
+          <a href="https://www.lasarmanagement.es" target="_blank" rel="noopener" style="font-size:0.85rem; color:var(--color-sand);">🌐 lasarmanagement.es</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       GALERÍA (CARRUSEL)
+       ===================================================== -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <div class="section__header text-center animate-on-scroll">
+        <span class="label-tag">El curso en imágenes</span>
+        <h2>Así es la formación</h2>
+        <p style="margin-top:0.75rem; max-width:520px; margin-left:auto; margin-right:auto;">
+          Teoría con planos reales, instrumentos topográficos y práctica en obra. Fotos de la última edición.
+        </p>
+      </div>
+
+      <!-- Carrusel -->
+      <div class="carousel animate-on-scroll" id="carousel" aria-label="Galería fotográfica del curso">
+        <div class="carousel__track" id="carouselTrack">
+          <!-- ASSETS: fotos de la carpeta estudio/ -->
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4440.jpg" alt="Alumnos en clase de replanteo" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4441.jpg" alt="Trabajo con planos de cimentación" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4442.jpg" alt="Sesión teórica de replanteo" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4443.jpg" alt="Análisis de documentación técnica" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4446.jpg" alt="Práctica con instrumentos topográficos" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4447.jpg" alt="Instructor explicando cálculos de replanteo" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4448.jpg" alt="Grupo de alumnos trabajando en equipo" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4449.jpg" alt="Revisión de planos de zapatas aisladas" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4450.jpg" alt="Ejercicio práctico de cálculo" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4451.jpg" alt="Sesión de replanteo en clase" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4457.JPG" alt="Instructor mostrando técnica de replanteo" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4466.jpg" alt="Alumnos con nivel topográfico" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4467.jpg" alt="Práctica de croquis de replanteo" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4468.jpg" alt="Documentación final del replanteo" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4469.jpg" alt="Materiales del curso" loading="lazy" />
+          </div>
+          <div class="carousel__slide">
+            <img src="estudio/IMG_4470.jpg" alt="Grupo de la última edición" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="carousel__controls">
+          <button class="carousel__btn" id="carouselPrev" aria-label="Imagen anterior">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="carousel__dots" id="carouselDots"></div>
+          <button class="carousel__btn" id="carouselNext" aria-label="Imagen siguiente">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       TESTIMONIOS (VÍDEOS)
+       ===================================================== -->
+  <section class="testimonials section" id="testimonios">
+    <div class="container">
+      <div class="section__header text-center animate-on-scroll">
+        <span class="label-tag">Lo que dicen los alumnos</span>
+        <h2>Testimonios reales</h2>
+        <p style="margin-top:0.75rem; max-width:520px; margin-left:auto; margin-right:auto;">
+          Alumnos de la última edición comparten su experiencia.
+          Imágenes y declaraciones con cesión de derechos firmada.
+        </p>
+      </div>
+
+      <div class="testimonials__grid animate-on-scroll">
+        <!-- Testimonio 1 -->
+        <div class="testimonial-video" id="testimonial1">
+          <video
+            src="testimonios/IMG_4551.MOV"
+            preload="metadata"
+            playsinline
+            aria-label="Testimonio alumno 1 del Curso de Replanteo"
+          ></video>
+          <button class="testimonial-video__play" aria-label="Reproducir testimonio">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </button>
+          <div class="testimonial-video__overlay">
+            <div class="testimonial-video__name">Alumno — Última edición</div>
+            <div class="testimonial-video__role">Arquitecto Técnico en formación</div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial-video" id="testimonial2">
+          <video
+            src="testimonios/IMG_4554.MOV"
+            preload="metadata"
+            playsinline
+            aria-label="Testimonio alumno 2 del Curso de Replanteo"
+          ></video>
+          <button class="testimonial-video__play" aria-label="Reproducir testimonio">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </button>
+          <div class="testimonial-video__overlay">
+            <div class="testimonial-video__name">Alumno — Última edición</div>
+            <div class="testimonial-video__role">Técnico en construcción</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cita destacada -->
+      <div style="text-align:center; margin-top:var(--space-xl);" class="animate-on-scroll">
+        <blockquote style="font-family:var(--font-heading); font-size:1.4rem; font-style:italic; color:var(--color-brown); max-width:680px; margin:0 auto; line-height:1.5;">
+          "Los alumnos que participaron en las prácticas nos dejaron testimonio de lo que habían hecho
+          y lo que habían aprendido. La práctica en obra es lo que marca la diferencia."
+        </blockquote>
+        <cite style="display:block; margin-top:0.75rem; font-size:0.85rem; color:var(--color-sand); font-style:normal; font-weight:600;">
+          — Rafael, instructor del curso
+        </cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       PARA QUIÉN ES
+       ===================================================== -->
+  <section class="section section--alt" id="para-quien">
+    <div class="container">
+      <div class="section__header text-center animate-on-scroll">
+        <span class="label-tag">¿Es para ti?</span>
+        <h2>Este curso está diseñado para ti si eres…</h2>
+      </div>
+      <div class="for-whom__grid animate-on-scroll">
+        <div class="for-whom__card">
+          <div class="for-whom__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          </div>
+          <h3>Estudiante de edificación</h3>
+          <p>Grado en Arquitectura Técnica, FP Edificación o similar que quiere formación práctica real.</p>
+        </div>
+        <div class="for-whom__card">
+          <div class="for-whom__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          </div>
+          <h3>Técnico en activo</h3>
+          <p>Jefe de obra, aparejador o encargado que quiere dominar el replanteo con precisión certificada.</p>
+        </div>
+        <div class="for-whom__card">
+          <div class="for-whom__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Director de ejecución</h3>
+          <p>Arquitecto técnico que quiere reforzar sus competencias en replanteo y documentación de obra.</p>
+        </div>
+        <div class="for-whom__card">
+          <div class="for-whom__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>Profesional Passivhaus</h3>
+          <p>Especialista en construcción eficiente que necesita precisión topográfica para sus proyectos de alta exigencia.</p>
+        </div>
+        <div class="for-whom__card">
+          <div class="for-whom__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/></svg>
+          </div>
+          <h3>Profesional en reconversión</h3>
+          <p>Técnico de otro sector que quiere incorporarse al mundo de la construcción con formación certificada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FAQ
+       ===================================================== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section__header text-center animate-on-scroll">
+        <span class="label-tag">Preguntas frecuentes</span>
+        <h2>Resuelve tus dudas</h2>
+      </div>
+
+      <div class="faq__list animate-on-scroll">
+
+        <div class="accordion" role="region">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__question">¿Necesito conocimientos previos de topografía?</span>
+            <span class="accordion__icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="accordion__body">
+            <p class="accordion__answer">
+              No son imprescindibles. El curso parte de los fundamentos de topografía aplicada a la construcción,
+              por lo que cualquier persona con formación técnica básica (FP, grado, o experiencia en obra) puede seguirlo sin dificultad.
+              El primer bloque cubre todo lo necesario para entender las operaciones del replanteo.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion" role="region">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__question">¿Qué instrumentos topográficos se utilizan en el curso?</span>
+            <span class="accordion__icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="accordion__body">
+            <p class="accordion__answer">
+              Se trabaja con instrumentos reales: nivel óptico, estación total, distanciómetro electrónico y GPS de posicionamiento.
+              El Día 2 (práctica en obra) se opera directamente con estos equipos sobre un solar real en ejecución.
+              Los instrumentos están incluidos en el coste del curso: no es necesario disponer de ellos.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion" role="region">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__question">¿Qué certificación obtengo al finalizar?</span>
+            <span class="accordion__icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="accordion__body">
+            <p class="accordion__answer">
+              Recibirás un certificado de superación del módulo 0565 "Replanteos de Construcción" con equivalencia de 7 créditos ECTS,
+              emitido por LASAR MANAGEMENT S.L. El currículo está alineado con el módulo oficial publicado en el BOE,
+              lo que garantiza su reconocimiento y validez profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion" role="region">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__question">¿En qué consiste exactamente el Día 2 en obra?</span>
+            <span class="accordion__icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="accordion__body">
+            <p class="accordion__answer">
+              El segundo día se trabaja en un solar real donde se está ejecutando o se va a ejecutar una cimentación con zapatas aisladas y vigas riostras.
+              Los alumnos realizan, bajo supervisión de los instructores, el replanteo completo: reconocimiento del solar, identificación de referencias,
+              puesta en estación de la estación total, materialización de puntos, replanteo altimétrico y documentación final. Es el mismo proceso que
+              se hace en una obra profesional real.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion" role="region">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__question">¿Cuántas plazas hay disponibles?</span>
+            <span class="accordion__icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="accordion__body">
+            <p class="accordion__answer">
+              El grupo es deliberadamente reducido para garantizar atención personalizada y una práctica en obra efectiva.
+              <!-- EDITABLE: número de plazas -->
+              El número exacto de plazas se confirma por convocatoria. Contacta con nosotros para conocer la disponibilidad actual.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion" role="region">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__question">¿Dónde se imparte? ¿Hay opción online?</span>
+            <span class="accordion__icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="accordion__body">
+            <p class="accordion__answer">
+              El curso es presencial. La parte teórica (Día 1) se imparte en las instalaciones de LASAR MANAGEMENT
+              en L'Eliana, Valencia. La parte práctica (Día 2) se desarrolla en una obra real en la zona.
+              Dada la naturaleza práctica del replanteo —que requiere instrumentos topográficos y terreno real—,
+              no existe modalidad completamente online para la parte de campo.
+              <!-- EDITABLE: dirección exacta si cambia la sede -->
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion" role="region">
+          <button class="accordion__header" aria-expanded="false">
+            <span class="accordion__question">¿Cuándo es la próxima convocatoria?</span>
+            <span class="accordion__icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="accordion__body">
+            <p class="accordion__answer">
+              <!-- EDITABLE: fechas de próxima convocatoria -->
+              Las fechas de la próxima edición se anunciarán próximamente. Rellena el formulario de registro
+              para recibir información prioritaria y ser de los primeros en reservar plaza.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       CTA FINAL + FORMULARIO DE REGISTRO
+       ===================================================== -->
+  <section class="cta-section" id="registro">
+    <div class="container">
+      <div class="cta-section__inner">
+        <!-- Izquierda: argumentario -->
+        <div class="cta-section__left">
+          <span class="label-tag">Reserva tu plaza</span>
+          <h2>Empieza a replanteartodo con método</h2>
+          <p>
+            El replanteo mal ejecutado cuesta tiempo, dinero y reputación profesional.
+            Este curso te da las herramientas, los cálculos y la práctica real para hacerlo bien
+            desde el primer día.
+          </p>
+          <ul class="cta-section__perks">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              70 horas con equivalencia de 7 ECTS
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Práctica real en obra — no simulaciones
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Manual técnico completo (~100 páginas)
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              4 checklists profesionales para usar en obra
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Grupo reducido y atención personalizada
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Instructores en activo — arquitectos técnicos Passivhaus
+            </li>
+          </ul>
+        </div>
+
+        <!-- Derecha: formulario -->
+        <div class="form-card animate-on-scroll">
+          <div class="form-card__title">Solicita información</div>
+          <div class="form-card__sub">Te contactamos en menos de 24 horas con todos los detalles.</div>
+
+          <!-- FORMULARIO: conectar con Mailchimp / HubSpot / Notion / email según necesidad -->
+          <form id="registroForm" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="perfil">Tu perfil profesional</label>
+              <select id="perfil" name="perfil">
+                <option value="">Selecciona una opción</option>
+                <option value="estudiante">Estudiante de edificación / FP</option>
+                <option value="tecnico">Técnico en activo (jefe de obra, encargado)</option>
+                <option value="arquitecto">Arquitecto / Arquitecto Técnico</option>
+                <option value="passivhaus">Especialista Passivhaus</option>
+                <option value="otro">Otro perfil técnico</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">¿Tienes alguna pregunta específica?</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos tu situación o duda..." rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--large">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              Solicitar información
+            </button>
+
+            <!-- Mensaje de éxito (oculto por defecto) -->
+            <div id="formSuccess" style="display:none; margin-top:1rem; padding:1rem; background:#f0f9f0; border:1px solid #c3e6cb; border-radius:8px; text-align:center; color:#155724; font-size:0.9rem;">
+              ✓ ¡Recibido! Te contactaremos en menos de 24 horas.
+            </div>
+          </form>
+
+          <p class="form-privacy">
+            Al enviar este formulario aceptas nuestra
+            <a href="politica-privacidad.html">política de privacidad</a>.
+            Tus datos no serán cedidos a terceros.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <!-- Brand -->
+        <div>
+          <div class="nav__logo" style="margin-bottom:1rem;">
+            <div class="nav__logo-icon">
+              <svg viewBox="0 0 22 22" fill="none" stroke="#46391B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 2L2 9h2v10h14V9h2L11 2z"/>
+                <rect x="8" y="14" width="6" height="7" rx="1"/>
+              </svg>
+            </div>
+            <div>
+              <span class="nav__logo-text" style="color:var(--color-sand);">LASAR MANAGEMENT</span>
+              <span class="nav__logo-sub">Arquitectura + Bioconstrucción</span>
+            </div>
+          </div>
+          <p class="footer__brand-text">
+            Formación técnica de alto nivel para profesionales de la construcción.
+            Especializados en Passivhaus, bioconstrucción y construcción eficiente.
+            Con sede en L'Eliana, Valencia.
+          </p>
+          <div style="margin-top:1rem; font-size:0.82rem; color:rgba(255,255,255,0.4);">
+            CIF: B-97.943.245 · Calle Francisco Alcaide nº22 bajo, L'Eliana, Valencia
+          </div>
+        </div>
+
+        <!-- Navegación -->
+        <div>
+          <div class="footer__heading">Navegación</div>
+          <ul class="footer__links">
+            <li><a href="#sobre-el-curso">Sobre el curso</a></li>
+            <li><a href="#programa">Programa</a></li>
+            <li><a href="#instructores">Instructores</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li><a href="#registro">Reservar plaza</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <div class="footer__heading">Contacto</div>
+          <ul class="footer__links">
+            <li><a href="tel:+34960065094">📞 960 065 094</a></li>
+            <li><a href="mailto:info@lasarmanagement.es">✉ info@lasarmanagement.es</a></li>
+            <li><a href="https://www.lasarmanagement.es" target="_blank" rel="noopener">🌐 lasarmanagement.es</a></li>
+          </ul>
+          <div style="margin-top:var(--space-md);">
+            <div class="footer__heading">Horario atención</div>
+            <!-- EDITABLE: horario de atención -->
+            <p style="font-size:0.82rem; color:rgba(255,255,255,0.5);">Lunes a viernes<br/>9:00 — 18:00 h</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 LASAR MANAGEMENT S.L. — Todos los derechos reservados.</p>
+        <div class="footer__legal">
+          <a href="politica-privacidad.html">Política de privacidad</a>
+          <a href="aviso-legal.html">Aviso legal</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA mobile -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="#registro" class="btn btn--primary">Solicitar información del curso</a>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
