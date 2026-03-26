@@ -194,39 +194,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ============================================================
-  // VÍDEOS DE TESTIMONIOS (play/pause al clicar)
-  // ============================================================
-  const testimonialWrappers = document.querySelectorAll('.testimonial-video');
-
-  testimonialWrappers.forEach(wrapper => {
-    const video   = wrapper.querySelector('video');
-    const playBtn = wrapper.querySelector('.testimonial-video__play');
-
-    if (!video || !playBtn) return;
-
-    playBtn.addEventListener('click', () => {
-      // Pausar todos los demás vídeos
-      testimonialWrappers.forEach(w => {
-        const v = w.querySelector('video');
-        if (v && v !== video) {
-          v.pause();
-          w.classList.remove('playing');
-        }
-      });
-
-      if (video.paused) {
-        video.play().catch(() => {});
-        wrapper.classList.add('playing');
-      } else {
-        video.pause();
-        wrapper.classList.remove('playing');
-      }
-    });
-
-    video.addEventListener('pause', () => wrapper.classList.remove('playing'));
-    video.addEventListener('ended', () => wrapper.classList.remove('playing'));
-  });
 
   // ============================================================
   // STICKY CTA — ocultar en la sección de registro

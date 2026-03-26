@@ -880,11 +880,13 @@ p  { color: var(--color-gray-600); }
   background: var(--color-dark);
   box-shadow: var(--shadow-md);
 }
-.testimonial-video video {
+.testimonial-video video,
+.testimonial-video__iframe {
   width: 100%;
   height: 360px;
   object-fit: cover;
   display: block;
+  border: none;
 }
 .testimonial-video__overlay {
   position: absolute;
@@ -917,12 +919,6 @@ p  { color: var(--color-gray-600); }
   transition: all var(--transition);
   color: var(--color-brown);
 }
-.testimonial-video__play:hover {
-  background: var(--color-sand);
-  transform: translate(-50%, -50%) scale(1.1);
-}
-.testimonial-video.playing .testimonial-video__play,
-.testimonial-video.playing .testimonial-video__overlay { opacity: 0; pointer-events: none; }
 
 /* ============================================================
    SECCIÓN: CHECKLIST / METODOLOGÍA

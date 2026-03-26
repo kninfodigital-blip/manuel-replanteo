@@ -19,3 +19,11 @@ npm-debug.log*
 
 # Claude
 .claude/
+
+# Videos (too large for git)
+*.MOV
+*.MP4
+*.AVI
+*.mov
+*.mp4
+*.avi
