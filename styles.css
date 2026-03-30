@@ -1482,3 +1482,69 @@ p  { color: var(--color-gray-600); }
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ============================================================
+   FECHAS DE EDICIONES
+   ============================================================ */
+.course-dates {
+  margin-top: var(--space-xl);
+  text-align: center;
+}
+
+.course-dates__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-brown);
+  margin-bottom: var(--space-md);
+  position: relative;
+  display: inline-block;
+}
+
+.course-dates__title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-sand);
+  margin: 0.5rem auto 0;
+}
+
+.dates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.date-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.date-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.date-card__edition {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-sage);
+  margin-bottom: var(--space-sm);
+}
+
+.date-card__date {
+  font-size: 1rem;
+  color: var(--color-dark);
+  margin-bottom: var(--space-xs);
+  font-weight: 500;
+}
+
+.date-card__time {
+  font-size: 0.9rem;
+  color: var(--color-gray-600);
+}
