@@ -175,7 +175,7 @@ p  { color: var(--color-gray-600); }
 .nav__logo-icon {
   width: 36px;
   height: 36px;
-  background: var(--color-sand);
+  background: white;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -341,7 +341,7 @@ p  { color: var(--color-gray-600); }
   color: var(--color-sand);
 }
 .hero__subtitle {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   color: rgba(255,255,255,0.75);
   max-width: 520px;
   margin-bottom: var(--space-lg);
@@ -411,7 +411,7 @@ p  { color: var(--color-gray-600); }
   backdrop-filter: blur(12px);
 }
 .hero__card-tag {
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
