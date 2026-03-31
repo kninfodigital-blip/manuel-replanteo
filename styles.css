@@ -1257,6 +1257,56 @@ p  { color: var(--color-gray-600); }
 }
 .cta-section__perks li svg { color: var(--color-olive); flex-shrink: 0; margin-top: 2px; }
 
+/* Precio persuasivo en CTA */
+.cta-section__price {
+  margin: var(--space-lg) 0;
+}
+.cta-section__price-inner {
+  background: rgba(201,179,122,0.1);
+  border: 1px solid rgba(201,179,122,0.2);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
+  text-align: center;
+}
+.cta-section__price-label {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+.cta-section__price-original {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: line-through;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  position: relative;
+  display: inline-block;
+}
+.cta-section__price-original::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: -5%; right: -5%;
+  height: 2px;
+  background: #e74c3c;
+  transform: rotate(-5deg);
+}
+.cta-section__price-amount {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: #e74c3c;
+  font-weight: 700;
+  line-height: 1;
+  display: block;
+  text-shadow: 0 2px 8px rgba(231,76,60,0.4);
+}
+.cta-section__price-note {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+  margin-top: 0.4rem;
+}
+
 /* Formulario */
 .form-card {
   background: var(--color-white);
