@@ -464,8 +464,9 @@ p  { color: var(--color-gray-600); }
   color: rgba(255,255,255,0.4);
   text-decoration: line-through;
   font-weight: 500;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
   position: relative;
+  padding-right: 60px;
 }
 .hero__card-price-original::after {
   content: '';
@@ -484,22 +485,24 @@ p  { color: var(--color-gray-600); }
   text-shadow: 0 2px 8px rgba(231,76,60,0.4);
   position: relative;
   display: inline-block;
+  padding-top: 8px;
 }
 .hero__card-price-amount::before {
   content: '¡OFERTA!';
   position: absolute;
-  top: -22px;
+  top: -28px;
   left: 50%;
   transform: translateX(-50%);
   background: #e74c3c;
   color: white;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   font-weight: 700;
-  padding: 0.25rem 0.6rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 20px;
   letter-spacing: 0.1em;
   white-space: nowrap;
   box-shadow: 0 2px 8px rgba(231,76,60,0.5);
+  z-index: 1;
 }
 .hero__card-price-note {
   font-size: 0.78rem;
