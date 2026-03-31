@@ -460,39 +460,40 @@ p  { color: var(--color-gray-600); }
   margin-bottom: 0.3rem;
 }
 .hero__card-price-original {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: rgba(255,255,255,0.4);
   text-decoration: line-through;
   text-decoration-color: #e74c3c;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 2.5px;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   position: relative;
   display: inline-block;
-  padding-right: 50px;
+  padding-right: 55px;
+  line-height: 1.2;
 }
 .hero__card-price-amount {
   font-family: var(--font-heading);
   font-size: 2.8rem;
   color: #e74c3c;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.1;
   text-shadow: 0 2px 8px rgba(231,76,60,0.4);
   position: relative;
   display: inline-block;
-  padding-top: 8px;
+  margin-top: -2px;
 }
 .hero__card-price-amount::before {
   content: '¡OFERTA!';
   position: absolute;
-  top: -28px;
+  top: -24px;
   left: 50%;
   transform: translateX(-50%);
   background: #e74c3c;
   color: white;
-  font-size: 0.55rem;
+  font-size: 0.5rem;
   font-weight: 700;
-  padding: 0.25rem 0.5rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 20px;
   letter-spacing: 0.1em;
   white-space: nowrap;
