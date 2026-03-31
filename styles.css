@@ -1367,6 +1367,7 @@ p  { color: var(--color-gray-600); }
   color: var(--color-gray-400);
   margin-top: 0.6rem;
   line-height: 1.5;
+  white-space: nowrap;
 }
 .form-privacy a { color: var(--color-sand); text-decoration: underline; }
 
