@@ -850,13 +850,21 @@ p  { color: var(--color-gray-600); }
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.carousel__slide:hover::after {
+.carousel__slide:not(.carousel__slide--video):hover::after {
   opacity: 1;
 }
 .carousel__slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.carousel__slide--video iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
   transition: transform 0.4s ease;
 }
 .carousel__slide:hover img { transform: scale(1.04); }
@@ -1493,20 +1501,23 @@ p  { color: var(--color-gray-600); }
 
 .course-dates__title {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--color-brown);
   margin-bottom: var(--space-md);
   position: relative;
   display: inline-block;
+  padding-bottom: 0.75rem;
 }
 
 .course-dates__title::after {
   content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--color-sand);
-  margin: 0.5rem auto 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-sand), var(--color-sage), var(--color-sand));
+  border-radius: 2px;
 }
 
 .dates-grid {
@@ -1518,33 +1529,48 @@ p  { color: var(--color-gray-600); }
 
 .date-card {
   background: var(--color-white);
-  border: 1px solid var(--color-gray-200);
-  border-radius: var(--radius-md);
-  padding: var(--space-md);
-  transition: transform var(--transition), box-shadow var(--transition);
+  border: 3px solid var(--color-sand);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  transition: all var(--transition);
+  box-shadow:
+    0 6px 20px rgba(201,179,122,0.25),
+    0 3px 8px rgba(201,179,122,0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.date-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-sand), var(--color-sage));
 }
 
 .date-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 12px 32px rgba(201,179,122,0.35),
+    0 6px 16px rgba(201,179,122,0.2);
 }
 
 .date-card__edition {
   font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--color-sage);
   margin-bottom: var(--space-sm);
 }
 
 .date-card__date {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--color-dark);
   margin-bottom: var(--space-xs);
   font-weight: 500;
 }
 
 .date-card__time {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-gray-600);
 }
