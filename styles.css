@@ -460,21 +460,16 @@ p  { color: var(--color-gray-600); }
   margin-bottom: 0.3rem;
 }
 .hero__card-price-original {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgba(255,255,255,0.4);
   text-decoration: line-through;
+  text-decoration-color: #e74c3c;
+  text-decoration-thickness: 2px;
   font-weight: 500;
   margin-bottom: 0.5rem;
   position: relative;
-  padding-right: 60px;
-}
-.hero__card-price-original::after {
-  content: '';
-  position: absolute;
-  top: 50%; left: -5%; right: -5%;
-  height: 2px;
-  background: #e74c3c;
-  transform: rotate(-5deg);
+  display: inline-block;
+  padding-right: 50px;
 }
 .hero__card-price-amount {
   font-family: var(--font-heading);
