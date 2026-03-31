@@ -445,22 +445,66 @@ p  { color: var(--color-gray-600); }
 }
 .hero__card-price {
   margin-bottom: var(--space-md);
+  position: relative;
+  padding: 1rem;
+  background: rgba(201,179,122,0.1);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(201,179,122,0.2);
+  text-align: center;
 }
 .hero__card-price-label {
   font-size: 0.72rem;
   color: rgba(255,255,255,0.5);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+.hero__card-price-original {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: line-through;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  position: relative;
+}
+.hero__card-price-original::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: -5%; right: -5%;
+  height: 2px;
+  background: #e74c3c;
+  transform: rotate(-5deg);
 }
 .hero__card-price-amount {
   font-family: var(--font-heading);
-  font-size: 2.4rem;
-  color: var(--color-sand);
+  font-size: 2.8rem;
+  color: #e74c3c;
   font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 2px 8px rgba(231,76,60,0.4);
+  position: relative;
+  display: inline-block;
+}
+.hero__card-price-amount::before {
+  content: '¡OFERTA!';
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e74c3c;
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(231,76,60,0.5);
 }
 .hero__card-price-note {
   font-size: 0.78rem;
   color: rgba(255,255,255,0.45);
+  margin-top: 0.4rem;
 }
 .hero__card .btn { width: 100%; justify-content: center; }
 .hero__card-guarantee {
