@@ -13,6 +13,14 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Faltan campos requeridos' });
   }
 
+  // DEBUG: ver variables de entorno (log sin mostrar contraseña completa)
+  console.log('=== DEBUG CREDENTIALS ===');
+  console.log('GMAIL_USER exists:', !!process.env.GMAIL_USER);
+  console.log('GMAIL_USER value:', process.env.GMAIL_USER);
+  console.log('GMAIL_APP_PASS exists:', !!process.env.GMAIL_APP_PASS);
+  console.log('GMAIL_APP_PASS length:', process.env.GMAIL_APP_PASS ? process.env.GMAIL_APP_PASS.length : 0);
+  console.log('========================');
+
   // Crear transporter de Gmail
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
