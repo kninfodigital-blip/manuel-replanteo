@@ -1568,29 +1568,56 @@ p  { color: var(--color-gray-600); }
   .tolerances__table th, .tolerances__table td { padding: 0.75rem 1rem; font-size: 0.82rem; }
 
   /* FIX FORMULARIO MÓVIL: evitar overflow */
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   .cta-section__inner {
     grid-template-columns: 1fr !important;
     gap: var(--space-lg);
   }
-  .cta-section .container {
-    padding-left: var(--space-sm);
-    padding-right: var(--space-sm);
+  .cta-section__left {
+    text-align: center;
+  }
+  .cta-section__left .label-tag {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  .cta-section__price-inner {
+    padding: var(--space-md);
   }
   .form-card {
-    width: 100%;
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
     box-sizing: border-box;
     padding: var(--space-md);
+    margin: 0;
   }
   .form-group input,
   .form-group select,
   .form-group textarea {
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
     box-sizing: border-box;
+    font-size: 16px; /* Evita zoom iOS */
+    padding: 0.75rem 0.8rem;
+  }
+  .form-group select {
+    /* Ajustar selects con opciones largas */
+    white-space: normal;
+  }
+  .form-card .btn {
+    width: 100% !important;
   }
   .form-privacy {
     white-space: normal;
     font-size: 0.7rem;
+    line-height: 1.4;
+  }
+  .form-trust-badges {
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.75rem;
   }
 }
 
