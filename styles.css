@@ -1566,6 +1566,32 @@ p  { color: var(--color-gray-600); }
   .hero__stats { gap: var(--space-md); }
   .modules__grid { grid-template-columns: 1fr; }
   .tolerances__table th, .tolerances__table td { padding: 0.75rem 1rem; font-size: 0.82rem; }
+
+  /* FIX FORMULARIO MÓVIL: evitar overflow */
+  .cta-section__inner {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-lg);
+  }
+  .cta-section .container {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+  .form-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: var(--space-md);
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .form-privacy {
+    white-space: normal;
+    font-size: 0.7rem;
+  }
 }
 
 /* ============================================================
