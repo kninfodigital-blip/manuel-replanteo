@@ -249,15 +249,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const formSuccess = document.getElementById('formSuccess');
 
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      // Validación básica
+      // Recoger todos los campos del formulario
       const nombre = form.nombre.value.trim();
-      const email  = form.email.value.trim();
+      const email = form.email.value.trim();
+      const telefono = form.telefono.value.trim();
+      const perfil = form.perfil.value;
+      const edicion = form.edicion.value;
+      const mensaje = form.mensaje.value.trim();
 
-      if (!nombre || !email) {
-        alert('Por favor, rellena al menos el nombre y el correo electrónico.');
+      // Validación básica
+      if (!nombre || !email || !telefono || !edicion) {
+        alert('Por favor, completa los campos requeridos: nombre, email, teléfono y edición.');
         return;
       }
 
@@ -267,28 +272,44 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      /**
-       * INTEGRACIÓN DEL FORMULARIO
-       * Opciones:
-       * a) Formspree: action="https://formspree.io/f/TU_ID" method="POST"
-       * b) Mailchimp: redirigir a URL de suscripción
-       * c) HubSpot: integrar con su SDK
-       * d) Email directo: enviar con backend Node/PHP
-       *
-       * Por ahora mostramos el mensaje de éxito (demo):
-       */
       const submitBtn = form.querySelector('[type="submit"]');
       submitBtn.textContent = 'Enviando...';
       submitBtn.disabled = true;
 
-      // Simular envío (reemplazar con fetch real)
-      setTimeout(() => {
-        form.reset();
-        formSuccess.style.display = 'block';
+      try {
+        const response = await fetch('/api/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            nombre,
+            email,
+            telefono,
+            perfil,
+            edicion,
+            mensaje,
+          }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          form.reset();
+          formSuccess.style.display = 'block';
+          submitBtn.textContent = 'Solicitar información';
+          formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+          alert('Error: ' + (data.error || 'No se pudo enviar el formulario. Inténtalo de nuevo.'));
+          submitBtn.textContent = 'Solicitar información';
+          submitBtn.disabled = false;
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('Error de conexión. Inténtalo de nuevo.');
         submitBtn.textContent = 'Solicitar información';
         submitBtn.disabled = false;
-        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }, 1200);
+      }
     });
   }
 

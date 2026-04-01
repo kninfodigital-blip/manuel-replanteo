@@ -27,3 +27,9 @@ npm-debug.log*
 *.mov
 *.mp4
 *.avi
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
