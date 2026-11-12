@@ -1029,6 +1029,28 @@ p  { color: var(--color-gray-600); }
   color: var(--color-sand);
 }
 
+/* Testimonios cortos (Shorts verticales) */
+.testimonials__shorts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 300px));
+  justify-content: center;
+  gap: clamp(0.75rem, 3vw, var(--space-lg));
+  margin-top: var(--space-lg);
+}
+.testimonial-short {
+  aspect-ratio: 9 / 16;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-dark);
+  box-shadow: var(--shadow-md);
+}
+.testimonial-short iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* Testimonial cards (text) */
 .testimonials-text__grid {
   display: grid;
