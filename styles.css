@@ -572,6 +572,23 @@ p  { color: var(--color-gray-600); }
   height: 420px;
   object-fit: cover;
 }
+/* Mosaico: foto grande arriba + 4 fotos de obra en 2×2 */
+.what__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.what__thumbs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+.what__gallery > .what__image img { height: 340px; }
+.what__thumbs .what__image {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+.what__thumbs .what__image img { height: 170px; }
 .what__image-badge {
   position: absolute;
   bottom: var(--space-md);
@@ -1544,6 +1561,8 @@ p  { color: var(--color-gray-600); }
   .nav__links, .nav__cta { display: none; }
   .nav__hamburger { display: flex; }
   .what__grid { grid-template-columns: 1fr; }
+  .what__gallery > .what__image img { height: 260px; }
+  .what__thumbs .what__image img { height: 130px; }
   .testimonials__grid { grid-template-columns: 1fr; }
   .methodology__grid { grid-template-columns: 1fr; }
   .for-whom__grid { grid-template-columns: 1fr; }
