@@ -589,6 +589,23 @@ p  { color: var(--color-gray-600); }
   box-shadow: var(--shadow-sm);
 }
 .what__thumbs .what__image img { height: 170px; }
+/* Vídeo vertical (Short) encima del título del programa */
+.programa__video {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto var(--space-xl);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: #000;
+}
+.programa__video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 .what__image-badge {
   position: absolute;
   bottom: var(--space-md);
